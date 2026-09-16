@@ -21,6 +21,10 @@ app.get("/health", (_req: Request, res: Response) => {
   res.status(200).json({ status: "ok" });
 });
 
+app.get("/version", (_req: Request, res: Response) => {
+  res.status(200).json({ version: "1.0.0" });
+});
+
 app.get("/courses", (_req: Request, res: Response) => {
   res.status(200).json(courses);
 });
