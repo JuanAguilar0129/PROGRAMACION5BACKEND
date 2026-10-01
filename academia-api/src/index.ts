@@ -1,9 +1,12 @@
 import express, { Request, Response } from "express";
+import instructorRoutes from "./routes/instructor.routes";
 
 const app = express();
 const PORT = process.env.PORT ?? 3000;
 
 app.use(express.json());
+
+app.use("/instructors", instructorRoutes);
 
 type Course = {
   id: number;

@@ -1,0 +1,164 @@
+{
+  "info": {
+    "name": "academia-api",
+    "description": "Coleccion de endpoints de academia-api (Programacion V - Backend).",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Health",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/health",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "health"
+          ]
+        },
+        "description": "Verifica que el servidor responde. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Version",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/version",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "version"
+          ]
+        },
+        "description": "Devuelve la version de la API. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Listar cursos",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/courses",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "courses"
+          ]
+        },
+        "description": "Lista todos los cursos. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Curso por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/courses/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "courses",
+            "2"
+          ]
+        },
+        "description": "Devuelve el curso con id 2. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Curso inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/courses/99",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "courses",
+            "99"
+          ]
+        },
+        "description": "Curso que no existe. Espera 404."
+      },
+      "response": []
+    },
+    {
+      "name": "Listar instructores",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/instructors",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "instructors"
+          ]
+        },
+        "description": "Lista todos los instructores. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Instructor por id",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/instructors/2",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "instructors",
+            "2"
+          ]
+        },
+        "description": "Devuelve el instructor con id 2. Espera 200."
+      },
+      "response": []
+    },
+    {
+      "name": "Instructor inexistente",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "{{baseUrl}}/instructors/99",
+          "host": [
+            "{{baseUrl}}"
+          ],
+          "path": [
+            "instructors",
+            "99"
+          ]
+        },
+        "description": "Instructor que no existe. Espera 404."
+      },
+      "response": []
+    }
+  ],
+  "variable": [
+    {
+      "key": "baseUrl",
+      "value": "http://localhost:3000",
+      "type": "string"
+    }
+  ]
+}
